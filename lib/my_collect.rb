@@ -4,7 +4,8 @@ def my_collect(array)
   while i < array.length
     yield array[i]
     bigArray.push(array[i].upcase)
+    yield array[i]
+
     i += 1
   end
-  bigArray
 end
